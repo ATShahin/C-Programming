@@ -1,1 +1,6 @@
+Learning objectives: Scope of variables
 
+1. Understand the use of static keyword and its advantages
+2. Understand the use of extern keyword and how it helps in accessing/modifying the variable in main file from 
+   an external file -> #include "file.h" in main.c file.
+3. Additionally understand the use of const keyword
