@@ -5,13 +5,13 @@ snprintf((char *)  u8MsgBuff,  sizeof(u8MsgBuff), "\r\n%s, u16Year);
 Explicitly converts buffer to a pointer to char
 
 
-Yes, using (char *) buffer as the destination buffer in snprintf is indeed correct. Let's clarify this:
+Yes, using (char *) u8MsgBuff as the destination buffer in snprintf is indeed correct. Let's clarify this:
 
 In C, when you declare an array, such as char buffer[20];, the name of the array buffer is implicitly converted to a pointer to its first element in many contexts, including when passing it to functions like snprintf.
 
-So, whether you pass buffer or (char *) buffer, you are effectively passing a pointer to the beginning of the array, which is perfectly valid. Both expressions denote the memory address where the array starts.
+So, whether you pass u8MsgBuff or (char *) u8MsgBuff, you are effectively passing a pointer to the beginning of the array, which is perfectly valid. Both expressions denote the memory address where the array starts.
 
-Therefore, using (char *) buffer in snprintf as the destination buffer is equivalent to using buffer, and both are correct and acceptable. It explicitly casts buffer to a pointer to char, which can be helpful for clarity in some situations, but it's not strictly necessary because of the implicit conversion.
+Therefore, using (char *) u8MsgBuff in snprintf as the destination buffer is equivalent to using u8MsgBuff, and both are correct and acceptable. It explicitly casts buffer to a pointer to char, which can be helpful for clarity in some situations, but it's not strictly necessary because of the implicit conversion.
 
 
 
