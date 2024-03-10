@@ -4,3 +4,13 @@ Learning objectives: Scope of variables
 2. Understand the use of extern keyword and how it helps in accessing/modifying the variable in main file from 
    an external file -> #include "file.h" in main.c file.
 3. Additionally understand the use of const keyword
+
+
+Modify the keywords and try:
+
+1. Try changing the u16Year value to 2024 and then compile. You will see errors
+2. Remove the const keyword and compile again. you will not see any errors
+
+const static unsigned int u16Year=2023;
+
+const static char version[]= "V00.00";
