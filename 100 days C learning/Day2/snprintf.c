@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include"file.h"
-
 /* Size of the buffer for received data*/
 #define BUFLEN  800
 
