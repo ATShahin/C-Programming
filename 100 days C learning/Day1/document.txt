@@ -1,16 +1,25 @@
 Learning objectives: Scope of variables
 
 1. Understand the use of static keyword and its advantages
-2. Understand the use of extern keyword and how it helps in accessing/modifying the variable in main file from 
-   an external file -> #include "file.h" in main.c file.
+2. Understand the use of extern keyword and how it helps in accessing/modifying the variable in main file(variablescope.c) from 
+   an external file -> #include "file.h" 
 3. Additionally understand the use of const keyword
 
 
 Modify the keywords and try:
 
-1. Try changing the u16Year value to 2024 and then compile. You will see errors
+Test for using the keyword static and without static
+const static unsigned int u16Year=2023; -> unsigned int u16Year=2023;
+1. Remove the keyword static, const from this line(given above) and include the code given in file.h by removing the /* and */
+   The extern keyword in file.h exposes the variable u16Year to outside the file it was originally designed. Therefore, it could be       
+   modified from file.h
+2. With static keyword, the variable u16Year scope is limited to the main file and not exposed to outside.
+
+With static and with out const keyword
+const static unsigned int u16Year=2023; -> unsigned int u16Year=2023;
+1. Try changing the u16Year value to 2024 with in the main function and then compile. You will see errors
 2. Remove the const keyword and compile again. you will not see any errors
 
-const static unsigned int u16Year=2023;
+The above test can also be done using the below line from variablescope.c (main file)
 
 const static char version[]= "V00.00";
