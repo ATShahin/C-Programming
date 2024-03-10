@@ -22,9 +22,9 @@ Purpose : Generic application start
 
 
 
-const static char pName[] = "EWG";
+const static char pName[] = "ATS";
 const static char copyRight[] = "(c)";
-const static char companyNameplt[] = "AUMA";
+const static char companyNameplt[] = "C Programming";
 const static unsigned int u16Year=2023;
 const static char version[]= "V00.00";
 
