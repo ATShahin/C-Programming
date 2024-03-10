@@ -13,6 +13,7 @@ const static unsigned int u16Year=2023; -> unsigned int u16Year=2023;
 1. Remove the keyword static, const from this line(given above) and include the code given in file.h by removing the /* and */
    The extern keyword in file.h exposes the variable u16Year to outside the file it was originally designed. Therefore, it could be       
    modified from file.h
+2. uncomment the function // function1(); inside the main function.This modifies the u16Year value to 2024.
 2. With static keyword, the variable u16Year scope is limited to the main file and not exposed to outside.
 
 With static and with out const keyword
