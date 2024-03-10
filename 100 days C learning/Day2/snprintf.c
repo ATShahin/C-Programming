@@ -26,7 +26,7 @@ char u8MsgBuff[BUFLEN];
 int main(void) {
   
 
-  snprintf(u8MsgBuff, sizeof(u8MsgBuff), "\r\n%s %s %s %d \r\n%s \r\n",pName,copyRight,companyNameplt,u16Year,version);
+  snprintf((char *) u8MsgBuff, sizeof(u8MsgBuff), "\r\n%s %s %s %d \r\n%s \r\n",pName,copyRight,companyNameplt,u16Year,version);
 
   printf(u8MsgBuff);
 
