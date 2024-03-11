@@ -21,5 +21,8 @@ int main()
  else
   printf("Strings 1 and 3 no match\n");
 
+  strcat(string1,string2);
+  printf("concatenated string1 : %s\n",string1);
+ 
  return 0;
 }
