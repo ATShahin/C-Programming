@@ -1,1 +1,6 @@
+Standard library string functions
 
+1. strlen
+2. strcpy
+3. strncmp or strcmp
+4. strcat
