@@ -1,1 +1,9 @@
+To understand the difference between a string and a character array.
 
+string ends with a null character
+whereas array doesn't
+
+How to print/transmit a string
+How to print/transmit a character array
+
+Many more to be added based on the findings..
