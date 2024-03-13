@@ -4,7 +4,7 @@ The algorithm is as follows
 
 1. Find the number of characters in the string
 2. copy the characters from the last location (n-1) to 0 to 0 to n of the character array
-
+  n-1 because n is null character
 Hint:the number of array/string locations should match
 array[0] = string[n-1]
 .
